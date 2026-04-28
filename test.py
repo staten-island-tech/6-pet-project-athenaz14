@@ -1,4 +1,4 @@
-class Calculator():
+""" class Calculator():
     def add(x, y):
         print(x + y)
         return x + y
@@ -21,9 +21,9 @@ class Hero:
     def buy(self, item):
         self.inventory.append(item)
         print(self.inventory)
-Jillian = Hero("Jillian", 150, ["Potion"])
-Jillian.buy({"title": "Sword", "atk": 34})
-print(Jillian.__dict__)
+Bob = Hero("Bob", 200, ["Potion"])
+Bob.buy({"title": "Staff", "atk": 30})
+print(Bob.__dict__)
 
 class BankAccount:
     def __init__(self, owner, balance):
@@ -35,5 +35,13 @@ class BankAccount:
 
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")
+Bob.buy("food")
+ """
+class Pet:
+    def __init__(self, name, happiness, show_status):
+        self.name = name
+        self.happiness = happiness
+        self.show_status = show_status
+Miso = Pet({"Miso", 70, })
+print(Miso.__dict__)
 
-Jillian =BankAccount("deposit", "show_balance")
