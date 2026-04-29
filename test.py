@@ -1,4 +1,5 @@
-""" class Calculator():
+""" """ 
+class Calculator():
     def add(x, y):
         print(x + y)
         return x + y
@@ -21,11 +22,11 @@ class Hero:
     def buy(self, item):
         self.inventory.append(item)
         print(self.inventory)
-Bob = Hero("Bob", 200, ["Potion"])
+""" Bob = Hero("Bob", 200, ["Potion"])
 Bob.buy({"title": "Staff", "atk": 30})
-print(Bob.__dict__)
+print(Bob.__dict__)"""
 
-class BankAccount:
+""" class BankAccount:
     def __init__(self, owner, balance):
         self.owner = owner
         self.__balance = balance  # double underscore means "private"
@@ -35,13 +36,44 @@ class BankAccount:
 
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")
-Bob.buy("food")
- """
+Bob = BankAccount("Bob", 200)
+Bob.deposit(1000)
+print(Bob.__dict__)
+ """"""
 class Pet:
-    def __init__(self, name, happiness, show_status):
+    def __init__(self, name, happiness):
         self.name = name
         self.happiness = happiness
-        self.show_status = show_status
-Miso = Pet({"Miso", 70, })
+Miso = Pet({"Miso",})
 print(Miso.__dict__)
 
+class Interaction:
+    def __init__(self, pet, happy_balance):
+        self.pet = pet
+        self.__happy_balance = happy_balance
+    def play(self, total):
+        self.__happy_balance += total
+    def show_status(self):
+        print(f"{self.pet} has {self.__happy_balance}")
+Miso = Interaction({"Miso",70})
+ """
+class Interaction:
+    def __init__(self, pet, happy_balance):
+        self.pet = pet
+        self.__happy_balance = happy_balance
+
+    def play(self, amount):
+        self.__happy_balance += amount
+
+    def show_balance(self):
+        print(f"{self.pet} has {self.__happy_balance}")
+Miso = Interaction("Miso", 1)
+Play = input("Do you want to play with the pet?(y/n)")
+if Play == "n":
+    print(":C")
+else:
+    Miso.play(1)
+    print("Miso's happiness has increased!")
+    Continue_Play = input("Do you want to continue play with the pet?(y/n)")
+
+print(Miso.__dict__)
