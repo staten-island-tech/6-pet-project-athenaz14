@@ -67,13 +67,14 @@ class Interaction:
 
     def show_balance(self):
         print(f"{self.pet} has {self.__happy_balance}")
+
 Miso = Interaction("Miso", 1)
 Play = input("Do you want to play with the pet?(y/n)")
-if Play == "n":
-    print(":C")
-else:
-    Miso.play(1)
+while Play == "y":
+    Miso.play(5)
     print("Miso's happiness has increased!")
-    Continue_Play = input("Do you want to continue play with the pet?(y/n)")
-
+    print(Miso.__dict__)
+    continue_play = input("Do you want to continue play with the pet?(y/n)")
+    if continue_play == "n":
+        break
 print(Miso.__dict__)
