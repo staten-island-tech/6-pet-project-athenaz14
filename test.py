@@ -72,9 +72,10 @@ Miso = Interaction("Miso", 1)
 Play = input("Do you want to play with the pet?(y/n)")
 while Play == "y":
     Miso.play(5)
-    print("Miso's happiness has increased!")
+    print(f"Miso's happiness has increased! Happiness Level:")
     print(Miso.__dict__)
     continue_play = input("Do you want to continue play with the pet?(y/n)")
     if continue_play == "n":
+        print(':C')
         break
 print(Miso.__dict__)
