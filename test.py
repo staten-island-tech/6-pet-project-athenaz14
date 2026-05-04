@@ -1,5 +1,5 @@
 """ """ 
-class Calculator():
+""" class Calculator():
     def add(x, y):
         print(x + y)
         return x + y
@@ -19,9 +19,8 @@ class Hero:
         self.money = money
         self.inventory = inventory
 
-    def buy(self, item):
-        self.inventory.append(item)
-        print(self.inventory)
+    def buy(self, item):s
+        print(self.inventory) """
 """ Bob = Hero("Bob", 200, ["Potion"])
 Bob.buy({"title": "Staff", "atk": 30})
 print(Bob.__dict__)"""
